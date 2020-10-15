@@ -36,7 +36,7 @@ cp ~/.dotfiles/wallpapers/791016.png /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/791016.png'
 
 echo -e "\e[1;37m[\e[1;33m+\e[1;37m] \e[0;0m Deploying terminal dconf"
-dconf load /org/gnome/terminal/legacy/profiles:/:70a8ab60-e51f-4d31-8430-c09197193a13 / < terminal.dconf
+dconf load /org/gnome/terminal/legacy/profiles:/:70a8ab60-e51f-4d31-8430-c09197193a13 / < ~/.dotfiles/terminal.dconf
 
 echo -e "\e[1;37m[\e[1;33m+\e[1;37m] \e[0;0m Deleting dot files"
 rm -rf ~/.dotfiles
